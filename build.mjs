@@ -122,7 +122,7 @@ function apercu(r, type, exemple, { eager = false } = {}) {
     <div class="zone"><img class="zone-photo" data-zone-photo alt="" hidden><span class="zone-texte" data-zone-texte>${esc(exemple)}</span></div>
   </figure>`;
   if (type === 'tshirt') return `<figure class="apercu apercu-tshirt" data-apercu="tshirt">
-    ${img(r, 'tshirt-enfant', 'T-shirt blanc d’enfant posé à plat avec votre personnalisation', { sizes: '(min-width: 900px) 46vw, 100vw' })}
+    ${img(r, 'tshirt-enfant', 'T-shirt blanc d’enfant posé à plat avec votre personnalisation', { eager, sizes: '(min-width: 900px) 46vw, 100vw' })}
     <div class="zone"><img class="zone-photo" data-zone-photo alt="" hidden><span class="zone-texte" data-zone-texte>${esc(exemple)}</span></div>
   </figure>`;
   return `<figure class="apercu apercu-serviette" data-apercu="serviette" data-coloris-cible>
