@@ -13,7 +13,7 @@ const ICI = path.dirname(new URL(import.meta.url).pathname).replace(/^\/([A-Z]:)
 const PROD = process.env.PROD === '1';
 const URL_SITE = PROD ? 'https://www.gravophoto.com/' : 'https://shigyn.github.io/gravophoto/';
 const PHOTOS = JSON.parse(fs.readFileSync(path.join(ICI, '_source', 'photos.json'), 'utf8'));
-const V = '1';
+const V = '2';
 
 const E = {
   nom: 'Gravophoto',

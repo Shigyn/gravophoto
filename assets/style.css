@@ -174,7 +174,7 @@ p { margin: 0 0 1em; }
 .fiche-texte .reglages { margin-top: 22px; }
 .points { margin: 26px 0 0; padding: 20px 0 0 20px; border-top: 1px solid var(--ligne); color: var(--gris); display: grid; gap: 6px; }
 .points li::marker { color: var(--rouge); }
-@media (max-width: 860px) { .fiche-in { grid-template-columns: 1fr; } .fiche-in > .apercu { position: static; } }
+@media (max-width: 860px) { .fiche-in { grid-template-columns: 1fr; } .fiche-in > .apercu { position: relative; top: auto; } }
 
 /* ---------- gravure et objets ---------- */
 .objets { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); gap: 28px 24px; margin-top: 32px; }
